@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Omar Gonzalez Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo">Omar Gonzalez</h1>
+					<p>Highly motivated aspiring data analyst with a passion for unlocking hidden insights within complex data sets.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/omar-gonzalez209/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/omarg209?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="image main" data-position="center">
+								<img src="images/banner.jpg" alt="" />
+							</div>
+							<div class="container">
+								<header class="major">
+									<h3 style="text-align: center;">Tableau HR Dashboard</h3>
+									<p style="text-align: center;">Dataset: DataCamp Challenge</p><br>
+									<div class="button-container" style="text-align:center;">
+										<a href="https://public.tableau.com/views/HRDashboard_16807610247050/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"  class="button alt small fit">View Dashboard on Tableau Public</a></button>
+
+									</div>
+								</header>
+
+
+								<h3><br><br>Project Summary</h3>
+
+								<p>
+									This project was a part of a DataCamp challenge I took part of. In the project, I explore a dataset for a fictitious software company called Atlas Labs. Dataset collected was clean but I uploaded to SQL anyways to do some basic exploration to insure that data was in fact clean. The goal of this project is to create a clean, self-explanatory, and interactive dashboard for the HR team of Atlas Labs in order to dive deeper into what factors impact attrition. This will help the organization determine what action they will need to take to retain more employees.
+								<p>
+									The data consists of three files: 
+									<ul>
+									<li>Employee table which consists of employee information such as <b>EmployeeID</b>, name, age, business travel, ethnicity, <b>EducationLevelID</b> (1-5), job, role and time in current role to name a few.</li>
+									<li>Performance Rating table which is surver data collected from employees that consists of <b>EmployeeID</b>, review date, environment satisfaction, job satisfaction, work-life balance, self rating and manager rating to name a few.</li>
+									<li>Education table which has <b>EducationLevelID</b> (1-5) and the corresponding education level.
+									</ul>
+								</p>
+								
+								<h3>Key findings from the analysis include:</h3>
+								<p>
+
+								  
+									<h4>1. Attrition</h4>
+									<ul>
+									  <li>The overall attrition rate is 32.68%.</li>
+									  <li>The highest attrition rate is observed in the Sales department (39.56%), followed by HR (36.74%) and then the Technology department (28.90%).</li>
+									  <li>Employees with 0 to 2 years of tenure show the highest attrition rate.</li>
+									  <li>Employees with "Some Travel" made up 65.90% of the total attrition.</li>
+									  <li>Employees with salaries of $60,000 and below, regardless of gender, are more likely to quit. </li>
+									</ul>
+								  
+									<h4>2. Headcount</h4>
+									<ul>
+									  <li>The total headcount in the organization is 6,919 employees.</li>
+									  <li>The majority of employees (33.52%) are aged between 25 and 29 years old.</li>
+									  <li>The gender distribution is almost equal, with 49.112% of employees being female and 50.888% being male.</li>
+									</ul>
+								  
+									<h4>4. Compensation</h4>
+									<ul>
+									  <li>The average annual salary for employees is $110,793.</li>
+									  <li>The Sales department has the highest average annual salary ($120,384), followed by HR ($107,630) and Technology ($106,157).</li>
+									  <li>Male employees have a higher average annual salary ($110,938) than female employees ($107,528).</li>
+									</ul>
+								These findings provide valuable insights into the factors that contribute to a an employee quitting and can help the HR department liik into a specific popultion of employees in order to retain more employees.							</p>
+
+						
+
+
+							<header><br>
+							<h3><u>Tableau Dashboard</u></h3>
+
+							</header>
+						
+
+
+
+
+							  <head>
+								<meta charset="UTF-8" />
+								<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+								<title>Tableau Dashboard Embedding</title>
+								<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+								<style>
+								  .tableauDashboard-container {
+									width: 160%;
+									height: 100%;
+									overflow: auto;
+									transform-origin: top left;
+									  transform: scale(0.62);
+								  }
+							
+								  #tableauDashboard {
+									width: 100%;
+									height: 100%;
+								  }
+							
+								  @media screen and (max-width: 1366px) {
+									.tableauDashboard-container {
+									  width: 147%; /* Adjust this value to fit the scaled dashboard on smaller screens */
+									  transform-origin: top left;
+									  transform: scale(0.68);
+									}
+								  }
+								</style>
+							  </head>
+							  <body>
+								<div style="overflow: hidden; width: 100%; height: 1530px;">
+								  <div class="tableauDashboard-container">
+									<div id="tableauDashboard"></div>
+								  </div>
+								</div>
+							
+								<script>
+								  function initTableauDashboard() {
+									const placeholderDiv = document.getElementById("tableauDashboard");
+									const url = "https://public.tableau.com/views/HRDashboard_16807610247050/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link";
+									const options = {
+									  hideTabs: true,
+									  onFirstInteractive: function () {
+										console.log("Dashboard is ready.");
+									  },
+									};
+							
+									const viz = new tableau.Viz(placeholderDiv, url, options);
+								  }
+							
+								  window.onload = initTableauDashboard;
+								</script>
+							  </body>
+
+
+
+							  
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

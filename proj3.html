@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Omar Gonzalez Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo">Omar Gonzalez</h1>
+					<p>Highly motivated aspiring data analyst with a passion for unlocking hidden insights within complex data sets.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/omar-gonzalez209/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/omarg209?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="image main" data-position="center">
+								<img src="images/banner.jpg" alt="" />
+							</div>
+							<div class="container">
+								<header class="major">
+									<h3 style="text-align: center;">Data Analysis and Model Development<br />
+										for House Sales in King County, USA</h3>
+									<p></p><br>
+									<div class="button-container" style="text-align:center;">
+										<a href="https://github.com/omarg209/Predicting_House_Sale_Price_Python"  class="button alt small fit">View on Github</a></button>
+									</div>
+								</header>
+
+
+
+								<h3><br><br>Introduction</h3>
+							<p>
+								This report presents the findings and outcomes of my data analysis project focused on predicting house sale prices in King County, USA. The dataset includes information on house sales between May 2014 and May 2015, with features such as the number of bedrooms, bathrooms, square footage, and more. The project aimed to develop a predictive model using various data analysis and machine learning techniques.
+							</p>
+							
+							
+							<h3>Data Wrangling</h3>
+							<p>
+								The data wrangling process involved the following steps:	
+								<ul>
+								<li>Importing necessary libraries and loading the dataset.</li>
+								<li>Identifying and handling missing values.</li>
+								<li>Checking for duplicates and removing them.</li>
+								<li>Converting data types when necessary.</li>
+								</ul>
+							</p>
+							
+						
+							
+							<h3>Data Exploration</h3>
+							<p>
+								During the data exploration phase, the following steps were performed:
+								<ul>
+								<li>Descriptive statistics were calculated to gain insights into the data.</li>
+								<li>Visualizations were created to explore relationships between variables, such as:</li>
+								<li>Box plots to identify outliers.</li>
+								<li>Regression plots / Scatter Plots to examine the correlation between variables.</li>
+								<li>Correlation analysis was conducted to identify highly correlated features.</li>
+								</ul>
+							</p>
+							
+						
+							
+							<h3>Hypothesis Testing</h3>
+							<p>
+								A t-test was performed to investigate the hypothesis that houses with more bedrooms have higher sale prices. The null hypothesis stated that there was no significant difference in the mean price between houses with different numbers of bedrooms. The alternative hypothesis claimed that there was a significant difference. The test resulted in a p-value significantly less than 0.05, leading to the rejection of the null hypothesis and the acceptance of the alternative hypothesis. We can therefore conclude that there is a relationship between the number of bedrooms and the sale price. We also examine this further in the project and see that price increases as the number of bedrooms reaches 8 before dropping with homes having more than 8 bedrooms.
+							</p>
+							
+
+
+							
+							<h3><br>Model Development and Refinement</h3>
+							<p>
+								Several models were developed and compared, including:<br>
+								<ul>
+								<li>Simple linear regression with one independent variable (square footage of living space).</li>
+								<li>Multiple linear regression with multiple independent variables.</li>
+								<li>Polynomial regression models of varying degrees.</li>
+								<li>Polynomial regression model with ridge regression.</li>
+								</ul>
+								A grid search was performed to optimize the hyperparameters for the polynomial model with ridge regression. The best performing model was the polynomial model of degree 2 with ridge regression with alpha = 0.001, which had an R-squared value of 0.7601.<br>
+								We could say then that the polynomial model with ridge regression was the best model but after some more evaluation using cross-validation, we see that the model that performs best is the polynomial model with an average r-squared of 0.7331 compared to 0.7193 to that of the polynomial model with ridge regression.
+							</p>
+						
+						
+						
+							<h3><br>Conclusion and Key Findings</h3>
+							<p>The project successfully analyzed the King County House Sales dataset and developed a predictive model for house sale prices. The data wrangling, exploration, hypothesis testing, and model development steps provided valuable insights into the factors influencing house prices and the performance of various regression models. The selected polynomial model can be used as a basis for further refinement and improvement. Future work could involve exploring additional features, applying feature selection techniques, or experimenting with alternative modeling methods to further improve the model's performance.</p>
+							<p>Some key findings from this project :
+								<ul>
+									<li>The average sale price of houses in King County was roughly $540,000</li>
+									<li>The number of bedrooms does have a significant correlation with the sale price of homes. Price increases as the number of bedrooms increase to 8 but then decreases at 8 bedrooms and above.</li>
+									<li>There does not seem to be a relationship between the number of times a house has been viewed and the sale price. Realistically we would expect the more expensive houses to be viewed less but this was not shown to be the case from our analysis.</li>
+								</ul>
+							</p>
+							
+							<br><br><h3><u>Python Code</u></h3><br>
+						
+						
+							<head>
+								<meta charset="UTF-8">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<title>Embedding Nbviewer</title>
+								<style>
+								  .iframe-container {
+									width: 130%;
+									height: 800px;
+									position: relative;
+								  }
+							  
+								  iframe {
+									width: 120%;
+									height: 100%;
+									border: none;
+									transform-origin: top left;
+									transform: scale(0.7); /* Adjust the scale value as needed to zoom out */
+									position: absolute;
+								  }
+							  
+								  /* Add media queries for different screen sizes */
+								  @media screen and (max-width: 1366px) {
+									.iframe-container {
+										width: 140%;
+										height: 1000px;
+										overflow-x: scroll; /* Add this line */
+									}
+
+									iframe {
+										width: 300%;
+										height: 100%;
+										transform: scale(0.59); /* Adjust the scale value as needed to zoom out */
+									}
+									}
+								</style>
+							  </head>
+							  <body>
+								<div class="iframe-container" id="iframe-container">
+								  <iframe src="https://nbviewer.org/github/OmarGonzalez-main/Predicting_House_Sale_Price_Python/blob/main/Data%20Analysis%20and%20Model%20Development%20for%20House%20Sales%20in%20King%20County%2C%20USA%20.ipynb" id="nbviewer-iframe">
+								  </iframe>
+								</div>
+				
+							  </body>
+
+
+						
+
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

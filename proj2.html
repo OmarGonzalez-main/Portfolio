@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Omar Gonzalez Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo">Omar Gonzalez</h1>
+					<p>Highly motivated aspiring data analyst with a passion for unlocking hidden insights within complex data sets.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/omar-gonzalez209/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/omarg209?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="image main" data-position="center">
+								<img src="images/banner.jpg" alt="" />
+							</div>
+							<div class="container">
+								<header class="major">
+									<h3 style="text-align: center;">Full SQL and Tableau Sales Project</h3>
+									<p style="text-align: center;">Dataset: <a href="https://codebasics.io/resources/sales-insights-data-analysis-project">Real-world sales data</a> by CodeBasics</p><br>
+									<div class="button-container" style="text-align:center;">
+										<a href="https://github.com/omarg209/SQL_Sales_Project"  class="button alt small fit">View on Github</a></button>
+										<br><br>
+										<a href="https://public.tableau.com/views/SalesDashboard_16817941723240/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"  class="button alt small fit">View Dashboard on Tableau Public</a></button>
+
+									</div>
+								</header>
+
+
+								<h3><br><br>Project Summary</h3>
+								<p>
+									The purpose of this project is to analyze and build an interactive dashboard for this particular company. We want to see what our biggest clients are and what are some areas we need to improve on in order to make more profit. This can help the company decide if we need to maybe run a promotion in a certain area or to a specific buyer in order to reach our targets. By creating an interactive dashboard we will quickly be able to identify trends and areas we need to improve on.
+								<p>
+								In this project, MySQL was utilized to clean and analyze the dataset in order to uncover trends and patterns. After the data was cleaned I then transfered all tables to Tableau and made the appropriate joins in order to begin building the dashboard. The dataset consisted of five tables: cutomers, date, markets, products and transactions tables. 
+								</p>
+								
+								<h3>Key findings from the analysis include:</h3>
+								<p>
+								<ul>
+									<li>Overall, Delhi NCR provided the most revenue and contributed to about 48% of the total profit contribution with having 2.30% profit margins.</li>
+									<li>Surat market had the overall highest profit margin (4.86%) but only brought in about 2.61M in revenue and contributed to only 0.51% of the total profit contribution.</li>
+									<li>Prod318 was the overall highest selling product bringing in almost 70M.</li>
+									<li>From 2017 to 2020, overall sales are dropping.</li>
+								</ul>
+								These findings provide valuable insights into what the next steps are in order to increase profits. For example, we noticed that Surat had high profit margins but did not bring in much revenue. So the company can look for ways to generate more business in Surat whether it be more marketing in the area or maybe running promotions.</p>
+							
+							<header>
+								<h3><u>SQL Code</u></h3>
+								<p>
+								</p>
+
+
+								<!-- Add jQuery -->
+								<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+								<!-- Add PrismJS CSS -->
+								<link href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css" rel="stylesheet" />
+								<!-- Add PrismJS JavaScript -->
+								<script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/prism.js"></script>
+		
+		
+		
+								<!-- Add PrismJS SQL Language Support -->
+								<script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-sql.min.js"></script>
+		
+		
+								<style>
+									#sql-code-container {
+										max-height: 900px;   /* Adjust the maximum height as per your preference */
+										overflow-y: auto;    /* Enable vertical scrolling when content exceeds the max-height */
+										font-size: 0.68em;    /* Adjust the font size, e.g., 0.9em for smaller text */
+										max-width: 115%;      /* Adjust the maximum width as a percentage of the parent element's width */
+										margin-left: auto;   /* Center the code container horizontally */
+										margin-right: auto;  /* Center the code container horizontally */
+									}
+									</style>
+		
+							
+								<pre id="sql-code-container"><code class="language-sql"></code></pre>
+		
+		
+								<script>
+									$(document).ready(function() {
+										// Replace 'path/to/your/sql-code.sql' with the path to your SQL code file
+										const sqlCodePath = 'https://raw.githubusercontent.com/omarg209/SQL_Sales_Project/main/Sales_Project.sql';
+									
+										$.get(sqlCodePath, function(data) {
+										const sqlCodeContainer = $('#sql-code-container > code');
+										sqlCodeContainer.text(data);
+										Prism.highlightElement(sqlCodeContainer[0]);
+										}).fail(function() {
+										console.error('Error fetching SQL code');
+										});
+									});
+									</script>
+											
+					
+							
+						
+
+
+							<header><br><br><br>
+							<h3><u>Tableau Dashboard</u></h3>
+
+							</header>
+						
+							
+
+						
+
+
+
+
+							<head>
+								<meta charset="UTF-8" />
+								<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+								<title>Tableau Dashboard Embedding</title>
+								<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+								<style>
+								  .tableauDashboard-container {
+									width: 150%;
+									height: 100%;
+									overflow: auto;
+									transform-origin: top left;
+									  transform: scale(0.68);
+								  }
+							
+								  #tableauDashboard {
+									width: 100%;
+									height: 100%;
+								  }
+							
+								  @media screen and (max-width: 1366px) {
+									.tableauDashboard-container {
+									  width: 147%; /* Adjust this value to fit the scaled dashboard on smaller screens */
+									  transform-origin: top left;
+									  transform: scale(0.68);
+									}
+								  }
+								</style>
+							  </head>
+							  <body>
+								<div style="overflow: hidden; width: 100%; height: 1530px;">
+								  <div class="tableauDashboard-container">
+									<div id="tableauDashboard"></div>
+								  </div>
+								</div>
+							
+								<script>
+								  function initTableauDashboard() {
+									const placeholderDiv = document.getElementById("tableauDashboard");
+									const url = "https://public.tableau.com/views/SalesDashboard_16817941723240/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link";
+									const options = {
+									  hideTabs: true,
+									  onFirstInteractive: function () {
+										console.log("Dashboard is ready.");
+									  },
+									};
+							
+									const viz = new tableau.Viz(placeholderDiv, url, options);
+								  }
+							
+								  window.onload = initTableauDashboard;
+								</script>
+							  </body>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

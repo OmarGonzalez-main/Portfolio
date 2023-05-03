@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Omar Gonzalez Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo">Omar Gonzalez</h1>
+					<p>Highly motivated aspiring data analyst with a passion for unlocking hidden insights within complex data sets.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About Me</a></li>
+						<li><a href="#three">Projects</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/omar-gonzalez209/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/omarg209?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+					<!-- One -->
+					<section id="one">
+						<div class="image main" data-position="center">
+							<img src="images/banner.jpg" alt="" />
+						</div>
+						<div class="container">
+							<header class="major">
+								<h3 style="text-align: center;">Data Analysis Portfolio</h3>
+								<p></p>
+							</header>
+							<p>Hello! I'm an aspiring data analyst with a Master's Degree in Mathematics with a concentration in Statistics, passionate about transforming raw data into actionable insights to drive business success. My academic foundation has equipped me with a deep understanding of statistical methods, data modeling techniques, and the ability to think critically about complex problems.</p>
+							<p>I am highly proficient in various data analysis tools, including Python, SQL, and popular libraries such as Pandas, NumPy, and scikit-learn. With experience in data visualization tools like Tableau, I can create impactful visualizations to communicate results effectively.</p>
+							
+							<!-- Add Load More and Show Less buttons and hidden-text div -->
+							<div class="button-container" style="text-align:center;">
+								<button id="load-more" class="button alt small">Load More</button>
+							</div>
+							<div id="hidden-text" class="hidden">
+								<p>My curiosity and enthusiasm for learning have driven me to continually expand my skillset, exploring advanced topics such as machine learning. I strive to stay up-to-date with the latest industry trends and best practices to ensure my work remains relevant and valuable.</p>
+								<p>As a team player with excellent communication skills, I am committed to collaborating with cross-functional teams to develop data-driven strategies and optimize business performance. My attention to detail and results-oriented mindset allow me to deliver high-quality work and exceed expectations.</p>
+								<p>I invite you to explore my portfolio to discover the various projects I've completed, showcasing my skills as a data analyst.</p>
+								<div class="button-container" style="text-align:center;">
+								<button id="show-less" class="button alt small hidden">Show Less</button>
+								</div>
+							</div>
+							<!-- End of Load More and Show Less buttons and hidden-text div -->
+							
+						</div>
+					</section>
+
+					<!-- Add the following style and script code to your HTML head or at the end of the body -->
+					<style>
+						.hidden {
+							display: none;
+						}
+					</style>
+					<script>
+						document.getElementById('load-more').addEventListener('click', function() {
+							document.getElementById('hidden-text').classList.remove('hidden');
+							document.getElementById('show-less').classList.remove('hidden');
+							this.style.display = 'none';
+						});
+
+						document.getElementById('show-less').addEventListener('click', function() {
+							document.getElementById('hidden-text').classList.add('hidden');
+							document.getElementById('load-more').style.display = 'inline-block';
+							this.style.display = 'none';
+						});
+					</script>
+
+
+
+
+					<!-- Three -->
+						<section id="three">
+							<div class="container">
+								<h3 style="text-align: center;">Projects</h3>
+								<p>Below are a variety of projects I have created that demonstrate different aspects of the data analysis process, focusing on key steps such as data cleaning, exploratory analysis, model selection and evaluation and visualization.</p>
+								<div class="features">
+									
+									
+									
+									<article>
+										<a href="proj1.html" class="image"><img src="images/Data-Cleaning-scaled.jpeg" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj1.html">Data Cleaning in SQL</a></h4>
+											<p><i>This project demonstrates extensive SQL data cleaning on a Nashville housing dataset, preparing it for accurate and efficient analysis or reporting.</i></p>
+										</div>
+									</article>
+
+
+
+
+									<article>
+										<a href="proj2.html" class="image"><img src="images/sales.jpg" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj2.html">Full SQL and Tableau Sales Project</a></h4>
+											<p><i>This project uses a real-world dataset in order to provide valuable sales insights and increase profits. Includes data cleaning in SQL and building an interactive dashboard in Tableau.</i></p>
+										</div>
+									</article>
+
+
+
+
+									<article>
+										<a href="proj3.html" class="image"><img src="images/housing.jpg" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj3.html">Python Housing Market Project</a></h4>
+											<p><i>For this project, I delve into an in-depth analysis of housing market data to gain valuable insights and trends. Utilizing advanced data analysis techniques, I create a highly accurate and reliable predictive model for home prices in King County, USA.</i></p>
+										</div>
+									</article>
+
+
+
+									<article>
+										<a href="proj4.html" class="image"><img src="images/earth.jpg" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj4.html">World Happiness Report using SQL and Tableau</a></h4>
+											<p><i>The goal for this project is to analyze and report interesting findings for happiness scores and contributing variables for countries from 2005-2022. SQL is used to analyze data and then findings are presented in Tableau.</i></p>
+										</div>
+									</article>
+
+
+
+
+									<article>
+										<a href="proj5.html" class="image"><img src="images/tableau.png" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj5.html">Tableau HR Dashboard</a></h4>
+											<p><i>The goal of this project is to create a clean, self-explanatory, and interactive dashboard in Tableau for the HR team of Atlas Labs in order to dive deeper into what factors impact attrition. This will help the organization determine what actions they will need to take to retain more employees.</i></p>
+										</div>
+									</article>
+
+
+
+
+									<article>
+										<a href="proj6.html" class="image"><img src="images/car_buying.jpg" alt="" /></a>
+										<div class="inner">
+											<h4><a href="proj6.html">Car Price Regression Analysis</a></h4>
+											<p><i>This project consists of multiple Python files for each step of the data analysis process starting with data wrangling all the way to model development in order to predict car sale prices.</i></p>
+										</div>
+									</article>
+
+
+
+								</div>
+							</div>
+						</section>
+
+
+
+
+
+					</div>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+
+	<head>
+		<title>Omar Gonzalez Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo">Omar Gonzalez</h1>
+					<p>Highly motivated aspiring data analyst with a passion for unlocking hidden insights within complex data sets.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/omar-gonzalez209/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/omarg209?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="image main" data-position="center">
+								<img src="images/banner.jpg" alt="" />
+							</div>
+							<div class="container">
+								<header class="major">
+									<h3 style="text-align: center;">World Happiness Report using SQL and Tableau</h3>
+									<p style="text-align: center;">Dataset: <a href="https://www.kaggle.com/datasets/usamabuttar/world-happiness-report-2005-present">World Happiness Report 2005-Present</a> by Usama Buttar</p><br>
+									<div class="button-container" style="text-align:center;">
+										<a href="https://github.com/omarg209/World_Happiness_Project"  class="button alt small fit">View on Github</a></button>
+										<br><br>
+										<a href="https://public.tableau.com/views/HappinessScoreDashboard_16806743761590/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"  class="button alt small fit">View Dashboard on Tableau Public</a></button>
+
+									</div>
+								</header>
+
+
+								<h3><br><br>Project Summary</h3>
+								<p>
+								The World Happiness Report dataset provides comprehensive data on the happiness levels of various countries from 2005 to 2022. The dataset contains information on life satisfaction, economic indicators, social factors, and other variables that contribute to the overall happiness of a country.
+								<p>
+								In this project, SQL server was utilized to analyze the dataset and uncover patterns and relationships between different factors contributing to happiness. The first challenge encountered was handling null values in the dataset. Since the data was collected on the same countries for several years, removing rows with null values was not ideal. Instead, null values were retained in the analysis as they would be ignored in calculations using SQL and Tableau.
+								</p>
+								
+								<h3>Key findings from the analysis include:</h3>
+								<p>
+								<ul>
+									<li>Denmark consistently ranked among the top 10 happiest countries in the world every year.</li>
+										<li>North America and Western Europe were identified as the top two happiest regions overall.</li>
+											<li>Latin American countries made up the majority of nations with low GDP but high happiness scores, potentially due to factors such as social support and freedom.</li>
+												<li>The United States and the United Arab Emirates, despite ranking among the top ten countries with the highest GDP per capita, had significantly lower life expectancies compared to other countries with high GDP per capita.</li>
+								</ul>
+								These findings provide valuable insights into the factors that contribute to a country's happiness and emphasize the importance of considering various aspects beyond economic indicators.							</p>
+							
+							<header>
+								<h3><u>SQL Code</u></h3>
+								<p>
+								</p>
+
+								<!-- Add jQuery -->
+								<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+								<!-- Add PrismJS CSS -->
+								<link href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css" rel="stylesheet" />
+								<!-- Add PrismJS JavaScript -->
+								<script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/prism.js"></script>
+
+
+
+								<!-- Add PrismJS SQL Language Support -->
+								<script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-sql.min.js"></script>
+
+
+								<style>
+									#sql-code-container {
+										max-height: 900px;   /* Adjust the maximum height as per your preference */
+										overflow-y: auto;    /* Enable vertical scrolling when content exceeds the max-height */
+										font-size: 0.68em;    /* Adjust the font size, e.g., 0.9em for smaller text */
+										max-width: 115%;      /* Adjust the maximum width as a percentage of the parent element's width */
+										margin-left: auto;   /* Center the code container horizontally */
+										margin-right: auto;  /* Center the code container horizontally */
+									}
+									</style>
+
+
+								<pre id="sql-code-container"><code class="language-sql"></code></pre>
+
+
+								<script>
+									$(document).ready(function() {
+										// Replace 'path/to/your/sql-code.sql' with the path to your SQL code file
+										const sqlCodePath = 'https://raw.githubusercontent.com/omarg209/World_Happiness_Project/main/WorldHappinessSQL.sql';
+									
+										$.get(sqlCodePath, function(data) {
+										const sqlCodeContainer = $('#sql-code-container > code');
+										sqlCodeContainer.text(data);
+										Prism.highlightElement(sqlCodeContainer[0]);
+										}).fail(function() {
+										console.error('Error fetching SQL code');
+										});
+									});
+									</script>
+
+
+
+
+						
+							
+
+							<header><br><br><br>
+							<h3><u>Tableau Dashboard</u></h3>
+
+							</header>
+
+
+
+
+
+
+							  <head>
+								<meta charset="UTF-8" />
+								<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+								<title>Tableau Dashboard Embedding</title>
+								<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+								<style>
+								  .tableauDashboard-container {
+									width: 150%;
+									height: 100%;
+									overflow: auto;
+									transform-origin: top left;
+									  transform: scale(0.68);
+								  }
+							
+								  #tableauDashboard {
+									width: 100%;
+									height: 100%;
+								  }
+							
+								  @media screen and (max-width: 1366px) {
+									.tableauDashboard-container {
+									  width: 147%; /* Adjust this value to fit the scaled dashboard on smaller screens */
+									  transform-origin: top left;
+									  transform: scale(0.68);
+									}
+								  }
+								</style>
+							  </head>
+							  <body>
+								<div style="overflow: hidden; width: 100%; height: 1530px;">
+								  <div class="tableauDashboard-container">
+									<div id="tableauDashboard"></div>
+								  </div>
+								</div>
+							
+								<script>
+								  function initTableauDashboard() {
+									const placeholderDiv = document.getElementById("tableauDashboard");
+									const url = "https://public.tableau.com/views/HappinessScoreDashboard_16806743761590/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link";
+									const options = {
+									  hideTabs: true,
+									  onFirstInteractive: function () {
+										console.log("Dashboard is ready.");
+									  },
+									};
+							
+									const viz = new tableau.Viz(placeholderDiv, url, options);
+								  }
+							
+								  window.onload = initTableauDashboard;
+								</script>
+							  </body>
+
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
